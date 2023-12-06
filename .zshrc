@@ -64,23 +64,35 @@ mkcd() {
 }
 
 buds() {
-    bluetoothctl disconnect 24:11:53:44:51:AE
-    bluetoothctl connect 24:11:53:44:51:AE
+    if [[ "$1" == "on" ]]; then
+        bluetoothctl connect 24:11:53:44:51:AE
+    elif [[ "$1" == "off" ]]; then
+        bluetoothctl disconnect 24:11:53:44:51:AE
+    else
+        echo "Invalid argument"
+    fi
 }
 
 xbox() {
-    bluetoothctl disconnect 14:CB:65:A1:CF:8C
-    bluetoothctl connect 14:CB:65:A1:CF:8C
+    if [["$1" == on]]; then
+        bluetoothctl connect 14:CB:65:A1:CF:8C
+    elif [["$1" == off]]; then 
+        bluetoothctl disconnect 14:CB:65:A1:CF:8C
+    else
+        echo "Invalid argument"
+    fi
 }
 
 night() {
-    redshift -PO 3500
-    light -S 50
-}
-
-day() {
-    redshift -PO 7000
-    light -S 100
+    if [[ "$1" == "on" ]]; then
+        redshift -P -O 3500
+        light -S 50
+    elif [[ "$1" == "off" ]]; then
+        redshift -P -O 6500
+        light -S 100
+    else
+        echo "Invalid argument"
+    fi
 }
 
 cpp_ce() {
