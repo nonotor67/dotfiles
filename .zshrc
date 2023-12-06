@@ -41,6 +41,7 @@ export LESS_TERMCAP_us=$'\e[91m'
 # Aliases
 alias diff='diff --color=auto'
 alias ls='ls --color=auto'
+alias la='ls -a --color=auto'
 alias ip='ip -color=auto'
 alias nighton='redshift -P -O 4000'
 alias nightoff='redshift -P -O 6500'
