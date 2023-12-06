@@ -1,0 +1,4 @@
+set showmode
+set number
+set relativenumber
+sethandler n:vim i:ide
