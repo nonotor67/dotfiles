@@ -1,5 +1,5 @@
 vim.o.number = true
-vim.o.relativenumber = true
+vim.o.relativenumber = false
 
 vim.o.expandtab = true
 vim.o.shiftwidth = 4
@@ -54,7 +54,6 @@ require "paq" {
   "lewis6991/gitsigns.nvim";
 
   "sheerun/vim-polyglot";
-  "jakewvincent/mkdnflow.nvim";
   
   -- "nvim-tree/nvim-tree.lua";
   "folke/which-key.nvim";
@@ -189,12 +188,6 @@ function! SynGroup()
   echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
 endfun
 ]])
-
---
--- mkdnflow
---
-
-require "mkdnflow".setup {}
 
 --
 -- nvim-cmp
