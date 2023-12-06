@@ -5,8 +5,6 @@
     </blockquote>
 </div>
 
-![neofetch, Dunst, and Rofi](./screenshots/desktop1.png)
-
 ## Installation
 
 You can use [GNU Stow](https://www.gnu.org/software/stow/) to install the
@@ -63,5 +61,3 @@ directories in your home directory, and only symlink actual files.
 - GTK theme: [Materia](https://github.com/nana-4/materia-theme)
 - Cursor theme: [Capitaine cursors](https://github.com/keeferrourke/capitaine-cursors)
 - [Wallpaper](https://unsplash.com/photos/ybw-0_Hfk1I)
-
-![Visual Studio Code, Firefox Developer Edition, and Zsh prompt](./screenshots/desktop2.png)
