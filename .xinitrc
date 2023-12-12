@@ -17,7 +17,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 xsetroot -cursor_name left_ptr
-feh --bg-fill "${HOME}/wallpaper.jpg" &
+feh --bg-fill "${HOME}/.wallpaper.jpg" &
 
 picom &
 
