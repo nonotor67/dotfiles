@@ -33,7 +33,7 @@ require "paq" {
   "kaicataldo/material.vim";
   -- "marko-cerovac/material.nvim";
 
-  { "nvim-treesitter/nvim-treesitter", run = function() vim.cmd("TSUpdate") end };
+  { "nvim-treesitter/nvim-treesitter", build = function() vim.cmd("TSUpdate") end };
   "nvim-treesitter/nvim-treesitter-context";
   "nvim-treesitter/playground";
 
