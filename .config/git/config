@@ -1,5 +1,7 @@
 [user]
-	name = nonotor
-	email = noah.contal@free.fr
+	name = Noah CONTAL
+	email = noah.contal@epita.fr
 [init]
 	defaultBranch = master
+[clean]
+	requireForce = true

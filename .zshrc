@@ -74,13 +74,8 @@ buds() {
 }
 
 xbox() {
-    if [["$1" == on]]; then
-        bluetoothctl connect 14:CB:65:A1:CF:8C
-    elif [["$1" == off]]; then 
-        bluetoothctl disconnect 14:CB:65:A1:CF:8C
-    else
-        echo "Invalid argument"
-    fi
+    bluetoothctl disconnect 14:CB:65:A1:CF:8C
+    bluetoothctl connect 14:CB:65:A1:CF:8C
 }
 
 night() {
