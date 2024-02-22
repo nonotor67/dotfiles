@@ -43,7 +43,7 @@ HIGHLIGHT_SIZE_MAX=262143  # 256KiB
 HIGHLIGHT_TABWIDTH=${HIGHLIGHT_TABWIDTH:-8}
 HIGHLIGHT_STYLE=${HIGHLIGHT_STYLE:-pablo}
 HIGHLIGHT_OPTIONS="--replace-tabs=${HIGHLIGHT_TABWIDTH} --style=${HIGHLIGHT_STYLE} ${HIGHLIGHT_OPTIONS:-}"
-PYGMENTIZE_STYLE=${PYGMENTIZE_STYLE:-autumn}
+PYGMENTIZE_STYLE=${PYGMENTIZE_STYLE:-monokai}
 OPENSCAD_IMGSIZE=${RNGR_OPENSCAD_IMGSIZE:-1000,1000}
 OPENSCAD_COLORSCHEME=${RNGR_OPENSCAD_COLORSCHEME:-Tomorrow Night}
 
@@ -133,10 +133,10 @@ handle_image() {
         #     exit 1;;
 
         ## DjVu
-        image/vnd.djvu)
-            ddjvu -format=tiff -quality=90 -page=1 -size="${DEFAULT_SIZE}" \
-                  - "${IMAGE_CACHE_PATH}" < "${FILE_PATH}" \
-                  && exit 6 || exit 1;;
+        # image/vnd.djvu)
+        #     ddjvu -format=tiff -quality=90 -page=1 -size="${DEFAULT_SIZE}" \
+        #           - "${IMAGE_CACHE_PATH}" < "${FILE_PATH}" \
+        #           && exit 6 || exit 1;;
 
         ## Image
         image/*)
