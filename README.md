@@ -23,12 +23,12 @@ directories in your home directory, and only symlink actual files.
 
 #### Graphical environment
 
-- Window manager: [bspwm](https://github.com/baskerville/bspwm)
-- Compositor: [picom](https://github.com/yshui/picom)
-- Bar: [Polybar](https://github.com/polybar/polybar)
-- Notification daemon: [Dunst](https://github.com/dunst-project/dunst)
+- Window manager: [hypeland](https://github.com/hyprwm/Hyprland)
+- Compositor:
+- Bar: 
+- Notification daemon: 
 - Program launcher: [Rofi](https://github.com/davatorium/rofi)
-- Screen locker: [i3lock-color](https://github.com/PandorasFox/i3lock-color)
+- Screen locker: 
 
 #### Fonts
 
@@ -36,28 +36,26 @@ directories in your home directory, and only symlink actual files.
 - Serif font: [Noto Serif](https://www.google.com/get/noto/)
 - Monospace font: [Consolas](https://aur.archlinux.org/packages/consolas-font)
 - Icon font for bar: [Font Awesome](https://fontawesome.com/)
+- Shell font : [JetBrains Mono Nerds](https://archlinux.org/packages/extra/any/ttf-jetbrains-mono-nerd/)
 
 #### Command-line
 
 - Shell: [Zsh](https://github.com/zsh-users/zsh)
-- Terminal emulator: [Alacritty](https://github.com/jwilm/alacritty)
+- Terminal emulator: [Kitty](https://github.com/kovidgoyal/kitty)
 
 #### Development environment
 
-- Primary code editor: [Visual Studio Code](https://github.com/microsoft/vscode)
-- Secondary code editor: [Neovim](https://github.com/neovim/neovim)
-- Java IDE: [IntelliJ IDEA Community Edition](https://github.com/JetBrains/intellij-community)
+- Primary code editor: [Neovim](https://github.com/neovim/neovim)
 
 #### Miscellaneous
 
-- Web browser: [Chromium](https://github.com/chromium/chromium)
+- Web browser: [Brave]([https://github.com/chromium/chromium](https://brave.com/linux/))
 - File manager: [ranger](https://github.com/ranger/ranger)
 - Document viewer: [zathura](https://github.com/pwmt/zathura)
 - Video player: [mpv](https://github.com/mpv-player/mpv)
-- Screenshot tool: [Flameshot](https://github.com/lupoDharkael/flameshot)
+- Screenshot tool:
 
 #### Theme
 
-- GTK theme: [Materia](https://github.com/nana-4/materia-theme)
-- Cursor theme: [Capitaine cursors](https://github.com/keeferrourke/capitaine-cursors)
-- [Wallpaper](https://unsplash.com/photos/ybw-0_Hfk1I)
+- GTK theme: 
+- Cursor theme:
