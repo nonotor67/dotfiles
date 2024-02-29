@@ -110,3 +110,11 @@ label:focus {
     background-color: transparent;
     color: white;
 }
+
+.custom-spotify {
+    padding: 0 10px;
+    margin: 0 4px;
+    background-color: transparent;
+    color: white;
+
+}
