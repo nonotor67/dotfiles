@@ -9,10 +9,10 @@
     "margin-right": 5,
 
     // Modules
-    "modules-left":["network", "clock"],
+    "modules-left":["network", "clock", "custom/separator" ,"hyprland/workspaces"],
     "modules-center":["cpu", "memory", "temperature"],
-    "modules-right":["custom/spotify","pulseaudio", "battery"],
-		
+    "modules-right":["custom/spotify","custom/separator" ,"pulseaudio", "battery"],
+	  
     // https://howardhinnant.github.io/date/date.html#to_stream_formatting
     "clock": {
       "interval": 60,
@@ -82,10 +82,67 @@
     },
     "custom/spotify": {
       "exec": "/usr/bin/python3 /home/nonotor/.config/waybar/mediaplayer.py --player firefox",
-      "format": "{:.55} | ",
+      "format": "{:.55}",
       "return-type": "json",
       "on-click": "playerctl play-pause",
       "on-scroll-up": "playerctl next",
       "on-scroll-down": "playerctl previous"
       },
+    "custom/separator": {
+        "format": "|",  
+      },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "separate-outputs": false,
+      "active-only": false,
+      // turn on true to show same all workspaces on each monitor
+      "all-outputs": false,
+      "format-icons": {
+        // 1-10
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        // 11-10
+        "11": "1",
+        "12": "2",
+        "13": "3",
+        "14": "4",
+        "15": "5",
+        "16": "6",
+        "17": "7",
+        "18": "8",
+        "19": "9",
+        "110": "10"
+      
+      // // 1-10
+      // "1": "一",
+      // "2": "二",
+      // "3": "三",
+      // "4": "四",
+      // "5": "五",
+      // "6": "六",
+      // "7": "七",
+      // "8": "八",
+      // "9": "九",
+      // "10": "十",
+      // // 11-10
+      // "11": "一",
+      // "12": "二",
+      // "13": "三",
+      // "14": "四",
+      // "15": "五",
+      // "16": "六",
+      // "17": "七",
+      // "18": "八",
+      // "19": "九",
+      // "110": "十"
+	  }
+  },
 }
