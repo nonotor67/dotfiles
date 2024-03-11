@@ -1,11 +1,11 @@
 # Created by newuser for 5.9
 
 # Variable global
-export STARSHIP_CONFIG="/home/nonotor/.config/starship/starship.toml"
-export XDG_SCREENSHOTS_DIR="/home/nonotor/Pictures/Screenshots"
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_CACHE_HOME=$HOME/.cache
-export XDG_DATA_HOME=$HOME/.local/share
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
 export VISUAL=nvim
 export EDITOR=nvim
 
@@ -13,11 +13,16 @@ export EDITOR=nvim
 unsetopt beep
 
 #binds -- see command zle -al -- cat to find keycode
-bindkey "^[[3~" delete-char
-bindkey "^[[3;5~" delete-word
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
-bindkey '^H' backward-kill-word
+bindkey "^[[2~" overwrite-mode # Insert
+bindkey "^[[H" beginning-of-line # Home
+bindkey "^[[5~" up-line-or-history # Page Up
+bindkey "^[[3~" delete-char # Delete
+bindkey "^[[F" end-of-line # End
+bindkey "^[[6~" down-line-or-history # Page Down
+bindkey "^[[A" history-beginning-search-backward # Up
+bindkey "^[[B" history-beginning-search-forward # Down
+bindkey "^[[1;5C" forward-word # Ctrl+Left
+bindkey "^[[1;5D" backward-word # Ctrl+Right
 
 # aliases
 alias ls='ls --color=auto -F'
@@ -63,15 +68,13 @@ export PF_COL2=9 # Color for info data
 export PF_COL1=6 # Color for title
 autoload -U promptinit && promptinit=6
 
-# unset
-unsetopt beep # disable beep on completion when pressing TAB
-
 # init starship
 eval "$(starship init zsh)"
 
 # zsh history
-SAVEHIST=2500 # save 2500 most-recent lines
-HISTFILE="/home/nonotor/.zsh_history"
+HISTSIZE=50000
+SAVEHIST=50000
+HISTFILE="$HOME/.zsh_history"
 
 # Use modern completion system
 autoload -Uz compinit
@@ -95,5 +98,6 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # zsh plugins
-source "/home/nonotor/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "/home/nonotor/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
+source "$HOME/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
+source "$HOME/.config/zsh/zsh-completions/zsh-completions.plugin.zsh"
