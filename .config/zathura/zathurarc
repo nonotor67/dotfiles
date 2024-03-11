@@ -1,7 +1,7 @@
 set default-fg "#FFFFFF"
 set default-bg "#1A1A1A"
 
-set font "monospace normal 18"
+set font "JetBrains Mono Nerds 12"
 
 set statusbar-fg "#FFFFFF"
 set statusbar-bg "#1A1A1A"
