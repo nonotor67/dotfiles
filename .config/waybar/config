@@ -11,7 +11,7 @@
     // Modules
     "modules-left":["network", "clock", "custom/separator" ,"hyprland/workspaces"],
     "modules-center":["cpu", "memory", "temperature"],
-    "modules-right":["custom/spotify","custom/separator" ,"pulseaudio", "battery"],
+    "modules-right":["custom/deezer","custom/separator","custom/updater","custom/separator" ,"pulseaudio", "battery"],
 	  
     // https://howardhinnant.github.io/date/date.html#to_stream_formatting
     "clock": {
@@ -80,17 +80,24 @@
         "on-click": "pavucontrol",
 		"tooltip": false,
     },
-    "custom/spotify": {
-      "exec": "/usr/bin/python3 /home/nonotor/.config/waybar/mediaplayer.py --player firefox",
+    "custom/deezer": { 
       "format": "{:.55}",
-      "return-type": "json",
+      "exec": "echo $(playerctl -p chromium metadata artist) - $(playerctl -p chromium metadata title)",
       "on-click": "playerctl play-pause",
       "on-scroll-up": "playerctl next",
-      "on-scroll-down": "playerctl previous"
+      "on-scroll-down": "playerctl previous",
+      "interval": 1,
       },
     "custom/separator": {
         "format": "|",  
       },
+    "custom/updater":{
+        "format": " {}",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) ]]",
+        "interval": 21600,
+        "on-click": "kitty -T update paru -Syu && checkupdates | wc -l",
+    },
     "hyprland/workspaces": {
       "format": "{icon}",
       "separate-outputs": false,
@@ -120,29 +127,6 @@
         "18": "8",
         "19": "9",
         "110": "10"
-      
-      // // 1-10
-      // "1": "一",
-      // "2": "二",
-      // "3": "三",
-      // "4": "四",
-      // "5": "五",
-      // "6": "六",
-      // "7": "七",
-      // "8": "八",
-      // "9": "九",
-      // "10": "十",
-      // // 11-10
-      // "11": "一",
-      // "12": "二",
-      // "13": "三",
-      // "14": "四",
-      // "15": "五",
-      // "16": "六",
-      // "17": "七",
-      // "18": "八",
-      // "19": "九",
-      // "110": "十"
 	  }
   },
 }
