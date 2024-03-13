@@ -23,12 +23,12 @@ directories in your home directory, and only symlink actual files.
 
 #### Graphical environment
 
-- Window manager: [hypeland](https://github.com/hyprwm/Hyprland)
-- Compositor:
-- Bar: 
-- Notification daemon: 
+- Window manager: [hyprland](https://github.com/hyprwm/Hyprland)
+- Bar: Waybar
+- Notification daemon: Mako
 - Program launcher: [Rofi](https://github.com/davatorium/rofi)
-- Screen locker: 
+- Screen locker: Hyprlock + Hypridle
+- Wallpaper : Hyprpaper
 
 #### Fonts
 
@@ -40,22 +40,21 @@ directories in your home directory, and only symlink actual files.
 
 #### Command-line
 
-- Shell: [Zsh](https://github.com/zsh-users/zsh)
+- Shell: [Zsh](https://github.com/zsh-users/zsh) + starship
 - Terminal emulator: [Kitty](https://github.com/kovidgoyal/kitty)
 
 #### Development environment
 
-- Primary code editor: [Neovim](https://github.com/neovim/neovim)
+- Primary code editor: [Neovim](https://github.com/neovim/neovim) + nvchad
 
 #### Miscellaneous
 
-- Web browser: [Brave]([https://github.com/chromium/chromium](https://brave.com/linux/))
-- File manager: [ranger](https://github.com/ranger/ranger)
+- Web browser: firefox
+- File manager: [ranger](https://github.com/ranger/ranger) + nemo
 - Document viewer: [zathura](https://github.com/pwmt/zathura)
 - Video player: [mpv](https://github.com/mpv-player/mpv)
-- Screenshot tool:
+- ScreenRecoder : wf-recorder
+- Screenshot tool: grimblast
+- ColorPicker : Hyprpicker
+- EMail client: thunderbird
 
-#### Theme
-
-- GTK theme: 
-- Cursor theme:
