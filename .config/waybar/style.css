@@ -14,8 +14,8 @@ window#waybar {
 }
 
 #workspaces {	
-    margin-right: 10px;
-	border-radius: 15px;
+    margin-right: 5px;
+	  border-radius: 10px;
     opacity: 0.88;
 }
 
