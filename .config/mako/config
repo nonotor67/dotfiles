@@ -9,5 +9,5 @@ max-icon-size=15
 default-timeout=3000
 
 [urgency=high]
-border-color=#E10429
-text-color=#E10429
+border-color=#F60233
+text-color=#F60233

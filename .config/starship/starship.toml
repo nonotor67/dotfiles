@@ -11,11 +11,11 @@ disabled = true
 
 [character]
 success_symbol = '[➜](bold #8abdb6)'
-error_symbol = '[➜](bold red)'
+error_symbol = '[➜](bold #F60233)'
 
 [username]
-style_user = 'red'
-style_root = 'red'
+style_user = '#F60233'
+style_root = '#F60233'
 format = '(blue)[$user]($style) '
 disabled = false
 show_always = true
