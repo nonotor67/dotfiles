@@ -10,8 +10,8 @@
 
     // Modules
     "modules-left":["network", "clock", "custom/separator" ,"hyprland/workspaces"],
-    "modules-center":["cpu", "memory", "temperature"],
-    "modules-right":["custom/deezer","custom/separator","custom/updater","custom/separator" ,"pulseaudio", "battery"],
+    "modules-center":["custom/updater","cpu", "memory", "temperature"],
+    "modules-right":["custom/deezer","custom/separator" ,"pulseaudio", "battery"],
 	  
     // https://howardhinnant.github.io/date/date.html#to_stream_formatting
     "clock": {
@@ -81,7 +81,7 @@
 		"tooltip": false,
     },
     "custom/deezer": { 
-      "format": "{:.55}",
+      "format": "♬ {:.55}",
       "exec": "echo $(playerctl -p chromium metadata artist) - $(playerctl -p chromium metadata title)",
       "on-click": "playerctl play-pause",
       "on-scroll-up": "playerctl next",
@@ -92,11 +92,11 @@
         "format": "|",  
       },
     "custom/updater":{
-        "format": " {}",
+        "format": "{}  ",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) ]]",
         "interval": 21600,
-        "on-click": "kitty -T update paru -Syu && checkupdates | wc -l",
+        "on-click": "kitty -T update paru -Syu && killall waybar && waybar",
     },
     "hyprland/workspaces": {
       "format": "{icon}",
