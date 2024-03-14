@@ -1,0 +1,6 @@
+#! /usr/bin/env zsh
+
+brightnessctl -s s 50% && \
+hyprlock && \
+notify-send 'System' 'Welcome back\!' && \
+brightnessctl -r
