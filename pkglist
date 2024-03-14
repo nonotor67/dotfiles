@@ -6,8 +6,11 @@ base-devel
 bluez
 bluez-utils
 brightnessctl
+btop
 clang
 cpupower-gui
+deezer
+discord
 efibootmgr
 firefox
 git
@@ -15,7 +18,6 @@ github-cli
 grimblast-git
 gst-plugin-pipewire
 gtk3
-htop
 hypridle
 hyprland
 hyprlock
@@ -24,11 +26,15 @@ hyprpicker
 imv
 intel-ucode
 kitty
+lib32-libpulse
+lib32-pipewire
 libpulse
 linux
 linux-firmware
+linux-headers
 lldb
 lua-language-server
+lutris
 mako
 man-db
 man-pages
@@ -45,6 +51,9 @@ noto-fonts-emoji
 noto-fonts-extra
 npm
 ntfs-3g
+nvidia-dkms
+nvidia-prime
+nvidia-settings
 opam
 pacman-contrib
 pamixer
@@ -54,10 +63,11 @@ paru-debug
 pavucontrol
 pfetch
 pipewire
-pipewire-alsa
 pipewire-jack
 pulseaudio
 pulseaudio-bluetooth
+qt5-wayland
+qt5ct
 ranger
 refind
 ripgrep
@@ -65,6 +75,7 @@ rofi-lbonn-wayland
 rustup
 sof-firmware
 starship
+steam
 stow
 texlive-basic
 texlive-bibtexextra
@@ -102,8 +113,10 @@ vscode-css-languageserver
 waybar
 wev
 wf-recorder
+wine
 wireplumber
 wl-clipboard
+xdg-desktop-portal-hyprland-git
 zathura
 zathura-pdf-mupdf
 zsh
