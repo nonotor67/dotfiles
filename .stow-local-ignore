@@ -1,2 +1,4 @@
-.git/
-.wallpaper.jpg
+./.git/
+./install.sh
+./pkglist
+./README.md
