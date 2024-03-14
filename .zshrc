@@ -1,5 +1,8 @@
 # Created by newuser for 5.9
 
+# Désactive le beep tabulation
+unsetopt beep
+
 # Variable global
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"
@@ -8,9 +11,12 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export VISUAL=nvim
 export EDITOR=nvim
-
-# Désactive le beep tabulation
-unsetopt beep
+# pfetch variables
+export PF_INFO="ascii title os kernel shell wm uptime pkgs memory"
+export PF_COL3=4 # Color for info names
+export PF_COL2=9 # Color for info data
+export PF_COL1=6 # Color for title
+autoload -U promptinit && promptinit=6
 
 #binds -- see command zle -al -- cat to find keycode
 bindkey "^[[2~" overwrite-mode # Insert
@@ -24,17 +30,11 @@ bindkey "^[[B" history-beginning-search-forward # Down
 bindkey "^[[1;5C" forward-word # Ctrl+Left
 bindkey "^[[1;5D" backward-word # Ctrl+Right
 
-# aliases
-alias ls='ls --color=auto -F'
-alias la='ls -a --color=auto -F'
-alias diff='diff --color=auto'
-alias grep='grep --color=auto'
-alias ip='ip -c=auto'
-alias tree='tree -F'
-alias cls='clear'
-alias py='python3'
-alias asciiquarium='asciiquarium -t -s'
 # custom commands
+mkcd() {
+    mkdir "$1" && cd "$1"
+}
+
 rangercd () { #ranger quit on where it was
     tmp="$(mktemp)"
     ranger --choosedir="$tmp" "$@"
@@ -44,12 +44,6 @@ rangercd () { #ranger quit on where it was
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
     }
-alias ranger="rangercd" 
-alias myip="curl http://ipecho.net/plain; echo"
-
-mkcd() {
-    mkdir "$1" && cd "$1"
-}
 
 buds() {
     if [[ "$1" == "on" ]]; then
@@ -61,12 +55,15 @@ buds() {
     fi
 }
 
-# pfetch variables
-export PF_INFO="ascii title os kernel shell wm uptime pkgs memory"
-export PF_COL3=4 # Color for info names
-export PF_COL2=9 # Color for info data
-export PF_COL1=6 # Color for title
-autoload -U promptinit && promptinit=6
+# aliases
+alias ls='ls --color=auto -F'
+alias la='ls -a --color=auto -F'
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip -c=auto'
+alias tree='tree -F'
+alias ranger="rangercd" 
+alias myip="curl http://ipecho.net/plain; echo"
 
 # init starship
 eval "$(starship init zsh)"
@@ -93,7 +90,6 @@ zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:
 zstyle ':completion:*' select-prompt '%B%FScrolling active: current selection at %p%b%f'
 zstyle ':completion:*' use-compctl true
 zstyle ':completion:*' verbose true
-
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
