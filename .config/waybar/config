@@ -40,6 +40,7 @@
       "format-charging": "{capacity}% ",
       "format-plugged": "{capacity}% ",
       "format-alt": "{time} {icon}",
+      "format-charging-alt": "{time} ",
       "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"], 
       "tooltip": false,
     },
@@ -95,8 +96,8 @@
         "format": "{}  ",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) ]]",
-        "interval": 21600,
-        "on-click": "kitty -T update paru -Syu && killall waybar && waybar",
+        "interval": 3600,
+        "on-click": "kitty -T update paru -Syu",
     },
     "hyprland/workspaces": {
       "format": "{icon}",
