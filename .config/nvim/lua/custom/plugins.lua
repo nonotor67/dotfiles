@@ -64,7 +64,7 @@ local plugins = {
     end
   },
   {
-    "mfussenegger/nvim-dap", -- rust & cpp debugger tool
+    "mfussenegger/nvim-dap", -- rust & cpp & python debugger tool
     config = function(_, _)
       require("core.utils").load_mappings("dap")
     end
@@ -133,6 +133,26 @@ local plugins = {
       dap.listeners.before.event_exited["dapui_config"] = function()
         dapui.close()
       end
+    end
+  },
+  --- Python Stuff
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    ft = "python",
+    opts = function()
+      return require "custom.configs.null-ls"
+    end,
+  },
+  {
+    "mfussenegger/nvim-dap-python",
+    ft = "python",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "rcarriga/nvim-dap-ui",
+    },
+    config = function(_,opts)
+      local path = "$HOME/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
+      require("dap-python").setup(path)
     end
   },
 }
