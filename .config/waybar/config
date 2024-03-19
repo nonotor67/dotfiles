@@ -17,7 +17,7 @@
     "clock": {
       "interval": 60,
 		  "tooltip": true,
-		  "format": "{:%H:%M %b %d}",
+		  "format": "{:%I:%M %b %d}",
 		  "timezone": "Canada/Eastern",
     },
     "network": {
