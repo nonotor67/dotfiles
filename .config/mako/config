@@ -10,5 +10,5 @@ default-timeout=3000
 ignore-timeout=0
 
 [urgency=high]
-border-color=#F60233
-text-color=#F60233
+border-color=#1899AA
+text-color=#1899AA

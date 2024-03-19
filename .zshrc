@@ -32,27 +32,33 @@ bindkey "^[[1;5D" backward-word # Ctrl+Right
 
 # custom commands
 mkcd() {
-    mkdir "$1" && cd "$1"
+  mkdir "$1" && cd "$1"
 }
 
 rangercd () { #ranger quit on where it was
-    tmp="$(mktemp)"
-    ranger --choosedir="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-    }
+  tmp="$(mktemp)"
+  ranger --choosedir="$tmp" "$@"
+  if [ -f "$tmp" ]; then
+    dir="$(cat "$tmp")"
+    rm -f "$tmp"
+      [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+  fi
+}
 
 buds() {
-    if [[ "$1" == "on" ]]; then
-        bluetoothctl connect 24:11:53:44:51:AE
-    elif [[ "$1" == "off" ]]; then
-        bluetoothctl disconnect 24:11:53:44:51:AE
-    else
-        echo "Invalid argument"
-    fi
+  case $1 in 
+    on)
+      echo "Connecting Buds..."
+      bluetoothctl connect 24:11:53:44:51:AE
+      ;;
+    off)
+      echo "Disconnecting Buds..."
+      bluetoothctl disconnect 24:11:53:44:51:AE
+      ;;
+    *)
+      echo "Usage: buds [on|off]"
+      ;;
+  esac
 }
 
 # aliases
@@ -94,6 +100,15 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # zsh plugins
-source "$HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
-source "$HOME/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
 source "$HOME/.config/zsh/zsh-completions/zsh-completions.plugin.zsh"
+source "/home/nonotor/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+# custom highlight : see https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#D7FFFF,underline'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#5D1249,underline'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=#D7FFFF'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#68A77E'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#68A77E'
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=#5D1249'
+
+
+source "/home/nonotor/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"

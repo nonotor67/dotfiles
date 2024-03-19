@@ -6,7 +6,7 @@
 }
 
 window#waybar {	
-    background-color: transparent;
+    background-color: alpha(#000000,0.6);
     color: white;
     transition-property: background-color;
     transition-duration: .5s;
@@ -109,12 +109,4 @@ label:focus {
 #pulseaudio {
     background-color: transparent;
     color: white;
-}
-
-.custom-spotify {
-    padding: 0 10px;
-    margin: 0 4px;
-    background-color: transparent;
-    color: white;
-
 }
