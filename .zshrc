@@ -104,11 +104,11 @@ source "$HOME/.config/zsh/zsh-completions/zsh-completions.plugin.zsh"
 source "/home/nonotor/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # custom highlight : see https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#D7FFFF,underline'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=#5D1249,underline'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#D7FFFF,underline'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=#D7FFFF'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#68A77E'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#68A77E'
-ZSH_HIGHLIGHT_STYLES[redirection]='fg=#5D1249'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#9CCCF2'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#9CCCF2'
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=#D7FFFF'
 
 
 source "/home/nonotor/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
