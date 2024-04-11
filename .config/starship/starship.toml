@@ -56,14 +56,6 @@ modified = ' '
 staged = '[++\($count\)](#e94d32)'
 deleted = ' '
 
-# Disable languages version preview
-[rust]
-disabled = true
 [c]
-disabled = true
-[cmake]
-disabled = true
-[python]
-disabled = true
-[lua]
-disabled = true
+symbol = 'C/CPP '
+detect_extensions = ['c', 'h', 'cpp']
