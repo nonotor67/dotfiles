@@ -44,9 +44,8 @@
       "tooltip": false,
     },
      "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}%  ",
         "tooltip": false,
-        "on-click": "cpupower-gui",
     },
     "memory": {
         "format": "{}% ",
