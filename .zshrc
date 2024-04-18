@@ -35,16 +35,6 @@ mkcd() {
   mkdir "$1" && cd "$1"
 }
 
-rangercd () { #ranger quit on where it was
-  tmp="$(mktemp)"
-  ranger --choosedir="$tmp" "$@"
-  if [ -f "$tmp" ]; then
-    dir="$(cat "$tmp")"
-    rm -f "$tmp"
-      [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-  fi
-}
-
 buds() {
   case $1 in 
     on)
@@ -68,7 +58,6 @@ alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ip='ip -c=auto'
 alias tree='tree -F'
-alias ranger="rangercd" 
 
 # init starship
 eval "$(starship init zsh)"
