@@ -69,7 +69,6 @@ alias grep='grep --color=auto'
 alias ip='ip -c=auto'
 alias tree='tree -F'
 alias ranger="rangercd" 
-alias myip="curl http://ipecho.net/plain; echo"
 
 # init starship
 eval "$(starship init zsh)"
