@@ -18,7 +18,6 @@
       "interval": 60,
 		  "tooltip": true,
 		  "format": "{:%I:%M %b %d}",
-		  "timezone": "Canada/Eastern",
     },
     "network": {
       "interface": "wlo1",
