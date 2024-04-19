@@ -58,6 +58,7 @@ alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ip='ip -c=auto'
 alias tree='tree -F'
+alias feh='feh -B black --scale-down'
 
 # init starship
 eval "$(starship init zsh)"
