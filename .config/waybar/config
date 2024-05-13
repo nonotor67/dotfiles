@@ -15,9 +15,9 @@
 	  
     // https://howardhinnant.github.io/date/date.html#to_stream_formatting
     "clock": {
-      "interval": 60,
+      "interval": 1,
 		  "tooltip": true,
-		  "format": "{:%I:%M %b %d}",
+		  "format": "{:%I:%M:%S %b %d}",
     },
     "network": {
       "interface": "wlo1",
@@ -80,7 +80,7 @@
 		"tooltip": false,
     },
     "custom/deezer": { 
-      "format": "♬ {:.55}",
+      "format": "♬ {:.35}",
       "exec": "echo $(playerctl -p chromium metadata artist) - $(playerctl -p chromium metadata title)",
       "on-click": "playerctl play-pause",
       "on-scroll-up": "playerctl next",

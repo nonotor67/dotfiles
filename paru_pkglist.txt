@@ -1,0 +1,13 @@
+anydesk-bin
+criterion
+deezer
+hyprpicker
+hyprshot
+jetbrains-toolbox
+nerdfetch
+notion-app-electron
+paru
+paru-debug
+pfetch
+rofi-lbonn-wayland
+zsh-completions-git

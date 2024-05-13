@@ -3,11 +3,13 @@
 lockfile="/tmp/recording.lock"
 
 if [[ -f $lockfile ]]; then
+    notify-send "Wf-Recorder" "Stop to record\!"
     killall wf-recorder
     rm $lockfile
     exit 0
 else
     touch $lockfile
+    notify-send "Wf-Recorder" "Start to record\!"
     wf-recorder -g "$(slurp)" -b 0 -c libx264 -p b=5M -r 144 -f "/tmp/record_$(date +'%Y-%m-%d_%H:%M:%S').mp4"
 
 fi

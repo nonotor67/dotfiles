@@ -11,12 +11,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export VISUAL=nvim
 export EDITOR=nvim
-# pfetch variables
-export PF_INFO="ascii title os kernel shell wm uptime pkgs memory"
-export PF_COL3=4 # Color for info names
-export PF_COL2=9 # Color for info data
-export PF_COL1=6 # Color for title
-autoload -U promptinit && promptinit=6
 
 #binds -- see command zle -al -- cat to find keycode
 bindkey "^[[2~" overwrite-mode # Insert
@@ -50,6 +44,23 @@ buds() {
       ;;
   esac
 }
+
+xbox() {
+  case $1 in 
+    on)
+      echo "Connecting Buds..."
+      bluetoothctl connect 14:CB:65:A1:CF:8C
+      ;;
+    off)
+      echo "Disconnecting Buds..."
+      bluetoothctl disconnect 14:CB:65:A1:CF:8C
+      ;;
+    *)
+      echo "Usage: buds [on|off]"
+      ;;
+  esac
+}
+
 
 # aliases
 alias ls='ls --color=auto -F'

@@ -86,4 +86,10 @@ lspconfig.lua_ls.setup {
       settings = {},
     },
   },
+
+  lspconfig.eslint.setup {
+    on_init = on_init,
+    on_attach = on_attach,
+    capabilities = capabilities,
+  },
 }
