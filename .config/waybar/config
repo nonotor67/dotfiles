@@ -9,7 +9,7 @@
     "margin-right": 5,
 
     // Modules
-    "modules-left":["network", "clock", "custom/separator" ,"hyprland/workspaces"],
+    "modules-left":["network#wlan","network#eth", "clock", "custom/separator" ,"hyprland/workspaces"],
     "modules-center":["custom/updater","cpu", "memory", "temperature"],
     "modules-right":["custom/deezer","custom/separator" ,"pulseaudio", "battery"],
 	  
@@ -19,9 +19,19 @@
 		  "tooltip": true,
 		  "format": "{:%I:%M:%S %b %d}",
     },
-    "network": {
+    "network#wlan": {
       "interface": "wlo1",
 	    "format": "...",
+      "format-wifi": "",
+      "format-ethernet": "",
+      "format-disconnected": "-",
+	    "tooltip": false,
+	    "max-length": 3,
+      "on-click": "nm-connection-editor",
+    },
+    "network#eth": {
+      "interface": "eno2",
+      "format": "...",
       "format-wifi": "",
       "format-ethernet": "",
       "format-disconnected": "-",

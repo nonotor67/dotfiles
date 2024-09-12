@@ -56,6 +56,3 @@ modified = ' '
 staged = '[++\($count\)](#e94d32)'
 deleted = ' '
 
-[c]
-symbol = 'C/CPP '
-detect_extensions = ['c', 'h', 'cpp']

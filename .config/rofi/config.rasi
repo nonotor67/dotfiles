@@ -84,7 +84,7 @@ element-icon {
 element selected {
   border-radius: 5px;
   text-color: #000000;
-  background-color: @cyan;
+  background-color: @orange;
 }
 
 mode-switcher {
@@ -101,5 +101,5 @@ button {
 
 button selected {
   background-color: @bg-col;
-  text-color: @cyan;
+  text-color: @orange;
 }

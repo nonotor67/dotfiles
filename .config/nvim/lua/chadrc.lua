@@ -2,7 +2,7 @@
 local M = {}
 
 M.ui = {
-	theme = "catppuccin",
+	theme = "github_dark",
   transparency = true,
   cmp = {
     style = "default",
