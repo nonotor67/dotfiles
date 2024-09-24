@@ -11,6 +11,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export VISUAL=nvim
 export EDITOR=nvim
+export LS_COLORS="$(vivid generate lava)"
 
 #binds -- see command zle -al -- cat to find keycode
 bindkey "^[[2~" overwrite-mode # Insert
@@ -103,12 +104,12 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 source "$HOME/.config/zsh/zsh-completions/zsh-completions.plugin.zsh"
 source "/home/nonotor/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # custom highlight : see https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
-ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#D7FFFF,underline'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=#D7FFFF,underline'
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=#D7FFFF'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#9CCCF2'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#9CCCF2'
-ZSH_HIGHLIGHT_STYLES[redirection]='fg=#D7FFFF'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#F3D69C,underline'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#F3D69C,underline'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=#F3D69C'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#F3D69C'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#F3D69C'
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=#F3D69C'
 
 
 source "/home/nonotor/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
