@@ -24,8 +24,8 @@ window {
   location: center;
   x-offset: 0px;
   y-offset: 0px;
-  border-color: @border-col;
-  background-color: @bg-col;
+  border-color: #F3D69C;
+  background-color: #0000007F;
   border-radius: 10px;
 }
 

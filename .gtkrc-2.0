@@ -1,0 +1,14 @@
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+include "/usr/share/themes/AdwaitaDark/gtk-2.0/gtkrc"
+
+style "user-font" {
+	font_name = "JetBrainsMono Nerd Font 10"
+}
+
+widget_class "*" style "user-font"
+
+gtk-font-name="JetBrainsMono Nerd Font 10"
+
+include "/home/nonotor/.gtkrc.mine"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT
