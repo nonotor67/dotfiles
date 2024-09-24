@@ -1,23 +1,24 @@
-adwaita-dark 1.0-1
-anydesk-bin 6.3.3-1
-brother-cups-wrapper-laser 2.0.1_2_0ubuntu7-2
-brother-hl3140cw-cups-bin 1.1.4-1
-brother-lpr-drivers-ac 1.0.3-1
-criterion 2.4.2-2
-deezer 6.0.210-1
-ftb-app-bin 1.25.18-1
-google-chrome-wayland-vulkan 128.0.6613.137-1
-hyprland-git 0.43.0.r57.00c86268-1
-hyprshot 1.3.0-1
-intel-nvidia-switch-bin 0.1.0-1
-jetbrains-toolbox 2.4.2.32922-1
-light 1.2.2-5
-nerdfetch 8.3.0-1
-notion-app-electron 3.15.0-1
-paru 2.0.4-1
-paru-debug 2.0.4-1
-pfetch 1.4.0-1
-rofi-lbonn-wayland 1.7.5+wayland3-1
-samsung-unified-driver-printer 1.00.39-7
-samsung_magician-consumer-ssd 1.0-1
-zsh-completions-git 0.35.0.r96.g978e79e-1
+adwaita-dark
+anydesk-bin
+brother-cups-wrapper-laser
+brother-hl3140cw-cups-bin
+brother-lpr-drivers-ac
+criterion
+deezer
+flameshot-git
+ftb-app-bin
+google-chrome-wayland-vulkan
+hyprland-git
+hyprshot
+intel-nvidia-switch-bin
+jetbrains-toolbox
+light
+nerdfetch
+notion-app-electron
+paru
+paru-debug
+pfetch
+rofi-lbonn-wayland
+samsung-unified-driver-printer
+samsung_magician-consumer-ssd
+zsh-completions-git
