@@ -92,4 +92,10 @@ lspconfig.lua_ls.setup {
     on_attach = on_attach,
     capabilities = capabilities,
   },
+
+  lspconfig.bashls.setup {
+    on_init = on_init,
+    on_attach = on_attach,
+    capabilities = capabilities,
+  },
 }
