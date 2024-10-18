@@ -19,7 +19,7 @@ fi
 xsetroot -cursor_name left_ptr
 feh --bg-fill "${HOME}/.wallpaper.jpg" &
 
-picom --config "$HOME/.config/picom/config" &
+picom --config "$HOME/.config/picom.conf" &
 
 for monitor in $(xrandr --listactivemonitors | tail -n +2 | awk '{ print $4; }'); do
     MONITOR="${monitor}" polybar -r bar &

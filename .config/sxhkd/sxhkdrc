@@ -41,10 +41,10 @@ XF86AudioRaiseVolume
   pamixer --allow-boost -i 5
 
 XF86MonBrightnessDown
-	light -U5
+	brightnessctl s 5%-
 
 XF86MonBrightnessUp
-	light -A 5
+	brightnessctl s 5%+
 
 #
 # bspwm hotkeys
