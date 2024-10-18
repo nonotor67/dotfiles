@@ -33,5 +33,9 @@ columns = 92
 lines = 24
 
 [window.padding]
-x = 16
-y = 16
+x = 8
+y = 8
+
+# set font size
+[font]
+size = 10

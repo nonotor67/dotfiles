@@ -94,6 +94,10 @@ HISTFILE="$HOME/.zsh_history"
 autoload -Uz compinit
 compinit
 
+# zsh plugins
+source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' format '%B%FCompleting %d%b%f'
 zstyle ':completion:*' group-name ''
@@ -110,9 +114,6 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# zsh plugins
-source "$HOME/.config/zsh/zsh-completions/zsh-completions.plugin.zsh"
-source "/home/nonotor/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # custom highlight : see https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#63b6bf,underline'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=#63b6bf,underline'
@@ -122,4 +123,3 @@ ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#63b6bf'
 ZSH_HIGHLIGHT_STYLES[redirection]='fg=#63b6bf'
 
 
-source "/home/nonotor/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
