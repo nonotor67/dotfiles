@@ -61,6 +61,16 @@ xbox() {
   esac
 }
 
+#ranger quit on where it was
+rangercd () { 
+    tmp="$(mktemp)"
+    ranger --choosedir="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
 
 # aliases
 alias ls='ls --color=auto -F'
@@ -70,6 +80,7 @@ alias grep='grep --color=auto'
 alias ip='ip -c=auto'
 alias tree='tree -F'
 alias feh='feh -B black --scale-down'
+alias ranger="rangercd"
 
 # init starship
 eval "$(starship init zsh)"

@@ -2,7 +2,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "github_dark",
+	theme = "dark_horizon",
   transparency = true,
   cmp = {
     style = "default",

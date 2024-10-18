@@ -20,7 +20,7 @@ element-text, element-icon , mode-switcher {
 
 window {
   height: 300px;
-  width: 600px;
+  width: 450px;
   border: 1px;
   location: center;
   x-offset: 0px;
