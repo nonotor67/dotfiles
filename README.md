@@ -23,12 +23,12 @@ directories in your home directory, and only symlink actual files.
 
 #### Graphical environment
 
-- Window manager: [hyprland](https://github.com/hyprwm/Hyprland)
-- Bar: Waybar
-- Notification daemon: Mako
+- Window manager: [BSPWM](https://github.com/hyprwm/Hyprland)
+- Bar: Polybar
+- Notification daemon: Dunst
 - Program launcher: [Rofi](https://github.com/davatorium/rofi)
-- Screen locker: Hyprlock + Hypridle
-- Wallpaper : Hyprpaper
+- Screen locker: I3Lock
+- Wallpaper : FEH
 
 #### Fonts
 
@@ -41,7 +41,7 @@ directories in your home directory, and only symlink actual files.
 #### Command-line
 
 - Shell: [Zsh](https://github.com/zsh-users/zsh) + starship
-- Terminal emulator: [Kitty](https://github.com/kovidgoyal/kitty)
+- Terminal emulator: Alacritty
 
 #### Development environment
 
@@ -49,12 +49,11 @@ directories in your home directory, and only symlink actual files.
 
 #### Miscellaneous
 
-- Web browser: firefox
-- File manager: [ranger](https://github.com/ranger/ranger) + nemo
+- Web browser: google-chrome
+- File manager: [ranger](https://github.com/ranger/ranger)
 - Document viewer: [zathura](https://github.com/pwmt/zathura)
 - Video player: [mpv](https://github.com/mpv-player/mpv)
-- ScreenRecoder : wf-recorder
-- Screenshot tool: grimblast
-- ColorPicker : Hyprpicker
+- Screenshot tool: flameshot
+- ColorPicker : XColor
 - EMail client: thunderbird
 
