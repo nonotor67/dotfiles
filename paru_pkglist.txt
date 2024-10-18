@@ -6,7 +6,6 @@ brother-lpr-drivers-ac
 deezer
 flameshot-git
 google-chrome
-intel-nvidia-switch-bin
 jetbrains-toolbox
 laptop-mode-tools
 neovim-git

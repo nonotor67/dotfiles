@@ -36,7 +36,9 @@ neofetch
 networkmanager
 nm-connection-editor
 nvidia-dkms
+nvidia-prime
 opam
+p7zip
 pacman-contrib
 pamixer
 pavucontrol
@@ -73,7 +75,6 @@ usbmuxd
 vala
 vscode-css-languageserver
 wev
-wf-recorder
 wine
 wlroots
 wpebackend-fdo
