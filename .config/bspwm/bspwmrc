@@ -18,7 +18,7 @@ bspc config pointer_motion_interval 8ms
 bspc config window_gap 8
 
 # Node settings
-bspc config border_width 2
+bspc config border_width 3
 
 # Rules
 bspc rule -a flameshot border=off
