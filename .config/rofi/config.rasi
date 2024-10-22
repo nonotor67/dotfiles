@@ -25,7 +25,7 @@ window {
   location: center;
   x-offset: 0px;
   y-offset: 0px;
-  border-color: #63b6bf;
+  border-color: #fdb604;
   background-color: #0000007F;
   border-radius: 10px;
 }
@@ -85,7 +85,7 @@ element-icon {
 element selected {
   border-radius: 5px;
   text-color: #000000;
-  background-color: #63b6bf;
+  background-color: #fdb604;
 }
 
 mode-switcher {
