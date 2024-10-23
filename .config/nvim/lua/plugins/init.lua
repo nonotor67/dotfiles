@@ -1,7 +1,7 @@
-vim.o.expandtab = true
-vim.o.shiftwidth = 4
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
+vim.opt.colorcolumn = "80"
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
 
 return {
   -- Formatting
@@ -86,7 +86,6 @@ return {
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
-    event = "InsertEnter",
     config = function()
       require("copilot").setup {
         panel = {
