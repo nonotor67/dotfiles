@@ -11,6 +11,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export VISUAL=nvim
 export EDITOR=nvim
+export GTK_THEME=Adwaita:dark
 
 #binds -- see command zle -al -- cat to find keycode
 bindkey "^[[2~" overwrite-mode # Insert
@@ -115,13 +116,13 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # custom highlight : see https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
-ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#fdb604,underline'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=#fdb604,underline'
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[redirection]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[alias]='fg=#fdb604'
-ZSH_HIGHLIGHT_STYLES[function]='fg=#fdb604'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#668e89,underline'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#668e89,underline'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=#668e89'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#668e89'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#668e89'
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=#668e89'
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#668e89'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#668e89'
+ZSH_HIGHLIGHT_STYLES[function]='fg=#668e89'
 
