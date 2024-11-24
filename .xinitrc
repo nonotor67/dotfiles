@@ -21,9 +21,10 @@ feh --bg-fill "${HOME}/.wallpaper.jpg" &
 
 picom --config "$HOME/.config/picom.conf" &
 
-for monitor in $(xrandr --listactivemonitors | tail -n +2 | awk '{ print $4; }'); do
-    MONITOR="${monitor}" polybar -r bar &
-done
+MONITOR="DP-0" polybar -r bar&
+MONITOR="DP-2" polybar -r bar&
+
+xrandr --output DP-0 --mode 1920x1080 --output DP-2 --mode 1920x1080 --right-of DP-0
 
 dunst &
 sxhkd &
